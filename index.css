@@ -1,0 +1,103 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+
+:root{
+    --red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    background-color: rgb(240, 237, 237);
+}
+
+@media screen and (max-width:768px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top:auto;
+        gap: 20px;
+        width: 50%;
+    }
+    
+    .starting-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:5px
+    }
+    .heading{
+        display: flex;
+        flex-direction: column;
+        font-size: 32px;
+    }
+    .paragraph{
+      color: var(--Grayish-Blue);
+      line-height: 25px;
+    }
+    article{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        box-shadow: 0px 2px rgb(204, 190, 190);
+        border-radius: 5px;
+        padding: 10%;
+        
+    }
+    .image-container{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 15%;
+    
+    }
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .second{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    p{
+        color: var(--Grayish-Blue);
+    }
+
+    .first{
+        border-top: 4px solid var(--Cyan);
+    }
+    .second-1{
+        border-top: 4px solid var(--red);
+    }
+    .second-2{
+        border-top: 4px solid var(--Orange);
+    }
+    .third{
+        border-top: 4px solid var(--Blue);
+    }
+    
+}
